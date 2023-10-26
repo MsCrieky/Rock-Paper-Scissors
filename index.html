@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!--FontAwsome-->
-    <script src="https://kit.fontawesome.com/9c04d80bd7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9c04d80bd7.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!--Stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Rock - Paper - Scissors</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="game-area">
-        <h3>
-            <img src="assets/images/person.png" alt="A cartoon person looking like a joker">
-        :</h3>
-        <br>
-        <h3>
-            <img src="assets/images/Computer.png" alt="A cartoon man sitting by a computer making thumbs-up">
-        :</h3>
-        <br>
-        <h3>Result:</h3>
+      <h3>
+        <img
+          src="assets/images/person.png"
+          alt="A cartoon person looking like a joker"
+        />
+        : <span id="computer-choice"></span>
+      </h3>
+      <br />
+      <h3>
+        <img
+          src="assets/images/Computer.png"
+          alt="A cartoon man sitting by a computer making thumbs-up"
+        />
+        : <span id="user-choice"></span>
+      </h3>
+      <br />
+      <h3>Result: <span id="result"></span></h3>
     </div>
-   
-</body>
+
+    <div id="btndiv">
+        <button class="buttons" id="rock">ROCK <i class="fa-solid fa-hand-back-fist fa-beat-fade" style="color: #a52a2a;"></i></button>
+        <button class="buttons" id="paper">PAPER <i class="fa-solid fa-hand fa-beat-fade" style="color: #a52a2a;"></i></button>
+        <button class="buttons" id="scissors">SCISSORS <i class="fa-solid fa-hand-scissors fa-beat-fade" style="color: #a52a2a;"></i></button>
+    </div>
+  </body>
 </html>
