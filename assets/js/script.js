@@ -2,9 +2,14 @@ const possibleChoices = document.querySelectorAll("button");
 const playerAnswer = document.getElementById("user-choice");
 const aiAnswer = document.getElementById("computer-choice");
 const resultView = document.getElementById("result");
+//Variables to add points to the score area
+const yourScoreDisplay = document.getElementById("your-score");
+const computerScoreDisplay = document.getElementById("computer-score");
 let userPick;
 let aiPick;
 let result;
+let yourScore = 0;
+let computerScore = 0;
 
 //Makes the button listen for clicks and put an event to it
 possibleChoices.forEach(button => button.addEventListener('click', (e) => {
@@ -20,13 +25,13 @@ function generateComputerChoice() {
 
     switch (randomNumber) {
         case 1:
-            aiPick = "ROCK";
+            aiPick = "rock";
             break;
         case 2:
-            aiPick = "SCISSORS";
+            aiPick = "scissors";
             break;
         case 3:
-            aiPick = "PAPER";
+            aiPick = "paper";
             break;
         default:
             aiPick = " "; //Default, incase someting wierd happens
@@ -39,16 +44,19 @@ function getResult() {
     if (aiPick === userPick) {
         result = "Its a Draw... Play it again Sam!";
     } else if (
-        (aiPick === "ROCK" && userPick === "SCISSORS") ||
-        (aiPick === "PAPER" && userPick === "ROCK") ||
-        (aiPick === "SCISSORS" && userPick === "PAPER")
+        (aiPick === "rock" && userPick === "scissors") ||
+        (aiPick === "paperPER" && userPick === "rock") ||
+        (aiPick === "scissors" && userPick === "paper")
     ) {
         result = "Oh No... You Lose!";
+        computerScore++;
     } else {
         result = "Yeah, You Win!";
+        yourScore++;
     }
     resultView.innerHTML = result;
-
+    yourScoreDisplay.textContent = yourScore;
+    computerScoreDisplay.textContent = computerScore;
 }
 
 // Opens an alert when the player clicks ?
