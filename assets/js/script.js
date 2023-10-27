@@ -8,17 +8,17 @@ let result;
 
 //Makes the button listen for clicks and put an event to it
 possibleChoices.forEach(button => button.addEventListener('click', (e) => {
-    userPick = e.target.id
-    playerAnswer.innerHTML = userPick
-    generateComputerChoice()
-    getResult()
-}))
+    userPick = e.target.id;
+    playerAnswer.innerHTML = userPick;
+    generateComputerChoice();
+    getResult();
+}));
 
 //Creates the computer answer
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) + 1;
 
-    switch(randomNumber) {
+    switch (randomNumber) {
         case 1:
             aiPick = "ROCK";
             break;
@@ -34,8 +34,9 @@ function generateComputerChoice() {
     aiAnswer.innerHTML = aiPick;
 }
 
+//Generates the result of the game
 function getResult() {
-    if(aiPick === userPick) {
+    if (aiPick === userPick) {
         result = "Its a Draw... Play it again Sam!";
     } else if (
         (aiPick === "ROCK" && userPick === "SCISSORS") ||
@@ -44,7 +45,7 @@ function getResult() {
     ) {
         result = "Oh No... You Lose!";
     } else {
-        result = "Yeah, You Win!"
+        result = "Yeah, You Win!";
     }
     resultView.innerHTML = result;
 
