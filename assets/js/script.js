@@ -50,3 +50,10 @@ function getResult() {
     resultView.innerHTML = result;
 
 }
+
+//Opens an alert when the player clicks on the ?
+const howToPlayButton = document.getElementById("how-to-play");
+
+howToPlayButton.addEventListener("click", function() {
+    alert("Rock - Paper- Scissors is a game you play agains the computer. You make a choice by clicking one of the buttons down below to make your choice. The computer will make his choice and the result will be displayed by the Game. Good Luck!");
+});

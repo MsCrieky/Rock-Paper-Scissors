@@ -31,10 +31,10 @@
 
     <header id="header"><img src="assets/images/header1.png" alt="a picture of rock, paper, scissor"></header>
     
-    <h1>Welcome to the game of Rock - Paper - Scissors !</h1>
+    <h1 id="h1">Welcome to the game of Rock - Paper - Scissors !</h1>
     
     <div id="game-area">
-      <h3>
+      <h3 id="user-choice-h3">
         <img
           src="assets/images/person.png"
           alt="A cartoon person looking like a joker"
@@ -42,7 +42,7 @@
         <span id="user-choice"></span>
       </h3>
       <br />
-      <h3>
+      <h3 id="computer-choice-h3">
         <img
           src="assets/images/Computer.png"
           alt="A cartoon man sitting by a computer making thumbs-up"
@@ -65,11 +65,12 @@
 
     <div class="score-area">
         <p class="scores">Your Score: <span id="your-score">0</span></p>
+        <br>
         <p class="scores">Computer Score: <span id="computer-score">0</span></p>
     </div>
 
     <script src="assets/js/script.js"></script>
 
-    <footer id="footer">?</footer>
+    <footer id="footer"> <button id="how-to-play"></button> ?</footer>
   </body>
 </html>
