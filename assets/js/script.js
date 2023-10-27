@@ -51,9 +51,11 @@ function getResult() {
 
 }
 
-//Opens an alert when the player clicks on the ?
+// Opens an alert when the player clicks ?
 const howToPlayButton = document.getElementById("how-to-play");
 
 howToPlayButton.addEventListener("click", function() {
-    alert("Rock - Paper- Scissors is a game you play agains the computer. You make a choice by clicking one of the buttons down below to make your choice. The computer will make his choice and the result will be displayed by the Game. Good Luck!");
+    console.log("Button clicked!");
+    alert('Rock - Paper - Scissors is a game you play against the Computer. You make a choice by pressing one of the buttons further down the page. The Computer will make his choice and the result will be displayed by the Game Result. Good Luck !');
+
 });
