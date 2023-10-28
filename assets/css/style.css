@@ -56,14 +56,21 @@ body {
 
 #how-to-play {
     color: brown;
-    font-size: 20px;
-    padding: 3px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 15px;
+}
 
+#reset-game {
+    color: brown;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 15px;
 }
 
 #footer {
     background-color: brown;
-    height: 45px;
+    height: 49px;
     width: 100%;
     padding: 7px;
 }

@@ -63,7 +63,20 @@ function getResult() {
 const howToPlayButton = document.getElementById("how-to-play");
 
 howToPlayButton.addEventListener("click", function() {
-    console.log("Button clicked!");
     alert('Rock - Paper - Scissors is a game you play against the Computer. You make a choice by pressing one of the buttons further down the page. The Computer will make his choice and the result will be displayed by the Game Result. Good Luck !');
 
+});
+
+// Resets the game to the start with 0 points
+const resetGame = document.getElementById("reset-game");
+
+resetGame.addEventListener("click", function() {
+    yourScore = 0;
+    computerScore = 0;
+
+    playerAnswer.innerHTML = "";
+    aiAnswer.innerHTML = "";
+    resultView.innerHTML = "";
+    yourScoreDisplay.textContent = yourScore;
+    computerScoreDisplay.textContent = computerScore;
 });
