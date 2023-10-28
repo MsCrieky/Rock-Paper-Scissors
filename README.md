@@ -2,6 +2,8 @@
 
 ## Introduction
 
+[To the Game](https://mscrieky.github.io/Rock-Paper-Scissors/)
+
 Overview:
 
 Welcome to the classic game of Rock - Paper - Scissors! This simple and timeless game allows you to test your luck and strategy against the computer. The rules are straightforward, making it a perfect choice for quick and enjoyable gaming sessions.
