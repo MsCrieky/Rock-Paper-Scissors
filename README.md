@@ -174,4 +174,5 @@ Media
 - Slack community has been a great resource for help and ideas.
 - My mentor Mitko Bachvarov has provided me with good links to helpful websites and gently guided me with good feedback.
 - freeCodeCamp, thank you for your page and course, it was a great help.
+- Bro Code, keep em coming. 
 - Anna, my insparation and support. Thank you.
