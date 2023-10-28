@@ -117,7 +117,7 @@ The Rock - Paper - Scissors game were all tested using the W3C Markup Validator 
 
 - [W3C Markup Validator](https://validator.w3.org/)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-- [JSHint a JavaScript Code Quality Tool] (<https://jshint.com/>)
+- [JSHint a JavaScript Code Quality Tool](<https://jshint.com/>)
 
 Validation Results
 
@@ -127,10 +127,49 @@ Validation Results
   - Style - No errors.
 - JSHint - No errors but a few warnings.
 
-![Lighthouse](assets/images/readme-light.png)
+![Lighthouse](assets/images/readme-lighthouse.png)
 
 Manual Testing
 
 - The website was tested on Google Chrome, Firefox och Safari browsers.
 - The website was viewed on desktop computers, laptops and various mobile phones.
 - Devtools was used to see how the site looks on different screen sizes.
+
+## Deployment
+
+Github was used to deploy the live version of Rock - Paper - Scissors game.
+The following steps were taken:
+
+1. Log into Github and locate the Rock - Paper - Scissors repository.
+2. Then tap into the Setting menu, located in the navigation menu of the header.
+3. In the menu to the left, under Code and automation, you will find "Pages"
+4. Make sure the "Deploy from Branch" under the Source tab is chosen, then change the "None" dropdown menu under Branch to "main".
+5. Then click "Save" - Give it a minute, then refresh the page and your live link will show up under the GitHub Pages heading.
+
+The live link to Silver Lodge: <https://mscrieky.github.io/Rock-Paper-Scissors/>
+
+## Credits
+
+Code
+
+- Understanding the concept of JavaScript has been a hard task and I have found alot of help in freeCodeCamp as well as in Bro Codes YouTube channel.
+- The README template was helpfully provided by Code Institute (template) as was the main template.
+- Using W3Scools as a tool was extreamely helpful.
+- Slack has been a good platform for inputs and ideas.
+- ChatGPT has also been a rescouce for explaining things to me as a newbie.
+
+Content
+
+- All the text was written by the developer.
+- The icons used were taken from Font Awsome.
+
+Media
+
+-Images were taken from the Pexels (free stock photos, royalty free images.) and pngtree.com.
+
+## Acknowledgements
+
+- Slack community has been a great resource for help and ideas.
+- My mentor Mitko Bachvarov has provided me with good links to helpful websites and gently guided me with good feedback.
+- freeCodeCamp, thank you for your page and course, it was a great help.
+- Anna, my insparation and support. Thank you.
